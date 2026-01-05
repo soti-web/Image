@@ -22,6 +22,25 @@
    */
 
   /* gradient */
+  
+  
+  
+  @font-face {
+  font-family: "KurdishFont1";
+  src: url("fonts/kurdish1.woff2") format("woff2"),
+       url("fonts/kurdish1.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KurdishFont2";
+  src: url("fonts/kurdish2.woff2") format("woff2"),
+       url("fonts/kurdish2.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+  
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
