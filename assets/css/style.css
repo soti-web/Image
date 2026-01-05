@@ -25,20 +25,26 @@
   
   
   
-  @font-face {
-  font-family: "KurdishFont1";
-  src: url("fonts/kurdish1.woff2") format("woff2"),
-       url("fonts/kurdish1.woff") format("woff");
-  font-weight: normal;
+@font-face {
+  font-family: "NRTB";
+  src: url("../assets/fonts/NRT-Bd.ttf") format("truetype");
+  font-weight: bold;
   font-style: normal;
 }
 
+.font-nrtb {
+  font-family: "NRTB", sans-serif;
+}
+
 @font-face {
-  font-family: "KurdishFont2";
-  src: url("fonts/kurdish2.woff2") format("woff2"),
-       url("fonts/kurdish2.woff") format("woff");
-  font-weight: normal;
+  font-family: "NRT";
+  src: url("../assets/fonts/NRT-Reg.ttf") format("truetype");
+  font-weight: bold;
   font-style: normal;
+}
+
+.font-nrt {
+  font-family: "NRT", sans-serif;
 }
   
 
