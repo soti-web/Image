@@ -95,15 +95,7 @@ const filterFunc = function (selectedValue) {
 }
 
 
-// nwe zoom click
-function openFullscreen(img) {
-  document.getElementById('modal').classList.add('active');
-  document.getElementById('modal-img').src = img.src;
-}
 
-function closeFullscreen() {
-  document.getElementById('modal').classList.remove('active');
-}
 
 
 // add event in all filter button items for large screen
