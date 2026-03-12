@@ -37,12 +37,12 @@
 }
 
 @font-face {
-  font-family: 'Rudaw';
-  src: url('../fonts/Rudaw.ttf') format('truetype');
+  font-family: 'NRT-Reg';
+  src: url('../fonts/NRT-Reg.ttf') format('truetype');
 }
 
 body {
-  font-family: 'Rudaw', sans-serif;
+  font-family: 'NRT-Reg', sans-serif;
 }
 
 .kurdi-font {
