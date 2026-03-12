@@ -36,18 +36,7 @@
   font-family: "NRTB", sans-serif;
 }
 
-@font-face {
-  font-family: 'NRT-Reg';
-  src: url('../fonts/NRT-Reg.ttf') format('truetype');
-}
 
-body {
-  font-family: 'NRT-Reg', sans-serif;
-}
-
-.kurdi-font {
-  direction: rtl;
-text-align: right;
 
 
 
