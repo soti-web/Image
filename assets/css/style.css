@@ -32,7 +32,7 @@
   font-style: normal;
 }
 
-.font-nrtb {
+.FNRTB {
   font-family: "NRTB", sans-serif;
 }
 
@@ -43,9 +43,12 @@
   font-style: normal;
 }
 
-.font-nrt {
+.FNRT {
   font-family: "NRT", sans-serif;
 }
+
+
+
   
 
   --bg-gradient-onyx: linear-gradient(
