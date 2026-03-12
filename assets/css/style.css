@@ -37,15 +37,17 @@
 }
 
 @font-face {
-  font-family: "Rudaw";
-  src: url("../assets/fonts/Rudaw.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
+  font-family: 'Rudaw';
+  src: url('../fonts/Rudaw.ttf') format('truetype');
 }
 
-.FRudaw {
-  font-family: "Rudaw", sans-serif;
+body {
+  font-family: 'Rudaw', sans-serif;
 }
+
+.kurdi-font {
+  direction: rtl;
+text-align: right;
 
 
 
