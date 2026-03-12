@@ -787,14 +787,14 @@ main {
 
 /*-----------------------------------*\
   #RESUME
-\*-----------------------------------*/
+\*-----------------------------------
 
-.article-title { margin-bottom: 30px; }
+.article-title { margin-bottom: 30px; } */
 
 
 /**
  * education and experience 
- */
+ 
 
 .timeline { margin-bottom: 30px; }
 
@@ -853,7 +853,7 @@ main {
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
-
+*/
 
 /**
  * skills 
@@ -1057,7 +1057,7 @@ main {
 
 /*-----------------------------------*\
   #BLOG
-\*-----------------------------------*/
+\*-----------------------------------
 
 .blog-posts { margin-bottom: 10px; }
 
@@ -1137,7 +1137,7 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
-}
+} */
 
 
 
@@ -1270,12 +1270,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /**
    * #PORTFOLIO, BLOG 
-   */
+   
 
   .project-img,
   .blog-banner-box { height: auto; }
 
-}
+} */
 
 
 
@@ -1511,7 +1511,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /**
    * #RESUME
-   */
+   
 
   .timeline-list { margin-left: 65px; }
 
@@ -1525,17 +1525,17 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .skills-item:not(:last-child) { margin-bottom: 25px; }
 
-
+*/
 
   /**
    * #PORTFOLIO, BLOG
-   */
+   
 
   .project-img, .blog-banner-box { border-radius: 16px; }
 
   .blog-posts-list { gap: 30px; }
 
-  .blog-content { padding: 25px; }
+  .blog-content { padding: 25px; } */
 
 
 
@@ -1647,10 +1647,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .filter-item button.active { color: var(--orange-yellow-crayola); }
 
-  /* portfolio and blog grid */
+  /* portfolio and blog grid 
 
   .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
-
+*/
 
 
   /**
@@ -1777,12 +1777,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /**
    * BLOG
-   */
+   
 
   .blog-banner-box { height: 230px; }
 
 }
-
+*/
 
 
 
@@ -1902,8 +1902,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /**
 	 * RESUME
-	 */
+	 
 
   .timeline-text { max-width: 700px; }
 
-}
+} */
