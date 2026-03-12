@@ -37,14 +37,14 @@
 }
 
 @font-face {
-  font-family: "NRT";
-  src: url("../assets/fonts/NRT-Reg.ttf") format("truetype");
+  font-family: "Rudaw";
+  src: url("../assets/fonts/Rudaw.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
-.FNRT {
-  font-family: "NRT", sans-serif;
+.FRudaw {
+  font-family: "Rudaw", sans-serif;
 }
 
 
