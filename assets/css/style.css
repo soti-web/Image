@@ -26,14 +26,14 @@
   
   
 @font-face {
-  font-family: "NRTB";
+  font-family: "NRT-Bd";
   src: url("../assets/fonts/NRT-Bd.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 .FNRTB {
-  font-family: "NRTB", sans-serif;
+  font-family: "NRT-Bd", sans-serif;
 }
 
 
