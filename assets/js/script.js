@@ -140,6 +140,14 @@ for (let i = 0; i < formInputs.length; i++) {
 
 
 
+// SEND MESSAGE DUGMA
+const form = document.querySelector(".form");
+const successMsg = document.getElementById("successMsg");
+
+form.addEventListener("submit", function() {
+  successMsg.style.display = "block";
+});
+
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
