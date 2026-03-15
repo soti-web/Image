@@ -177,8 +177,28 @@ html { font-family: var(--ff-poppins); }
 body { background: var(--smoky-black); }
 
 
+/*-----------------------------------*\
+  #Send message Dugma
+\*-----------------------------------*/
 
+.form-btn {
+  transition: all 0.2s ease;
+}
 
+.form-btn:hover {
+  transform: translateY(-2px);
+}
+
+.form-btn:active {
+  transform: scale(0.95);
+}
+
+.success-message{
+  display:none;
+  color:green;
+  margin-top:10px;
+  font-weight:bold;
+}
 
 /*-----------------------------------*\
   #REUSED STYLE
