@@ -1080,43 +1080,6 @@ main {
   font-weight: var(--fw-300);
 }
 
-/*----------------------------*\
-   Responsive for Mobile
-\*----------------------------*/
-@media (max-width: 768px) {
-
-  /* Project grid single column */
-  .project-list {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  /* Project image responsive */
-  .project-img {
-    padding-top: 75%; /* slightly taller on mobile */
-  }
-
-  /* Overlay & icon always visible on touch devices */
-  .project-item-icon-box {
-    opacity: 1 !important;
-    transform: translate(-50%, -50%) scale(1) !important;
-    pointer-events: all;
-  }
-
-  /* Disable image hover zoom on touch devices */
-  .project-item > a:hover img {
-    transform: scale(1);
-  }
-
-  /* Filter select full width */
-  .filter-select {
-    font-size: var(--fs-7);
-  }
-
-  .select-list {
-    top: calc(100% + 4px);
-  }
-}
 
 
 
