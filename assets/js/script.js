@@ -138,15 +138,6 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
-//rsm responsive
-// prevent project links from reloading page
-const projectLinks = document.querySelectorAll(".project-item a");
-
-for (let i = 0; i < projectLinks.length; i++) {
-  projectLinks[i].addEventListener("click", function (e) {
-    e.preventDefault();
-  });
-}
 
 
 
@@ -162,7 +153,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
       if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
         pages[i].classList.add("active");
         navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
+        //window.scrollTo(0, 0);
       } else {
         pages[i].classList.remove("active");
         navigationLinks[i].classList.remove("active");
