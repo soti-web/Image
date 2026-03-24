@@ -28,18 +28,7 @@
   #lightbox { display: none; }
   
   
-  .navbar-link {
-  transition: all 0.3s ease;
-}
 
-.navbar-link:hover {
-  transform: translateY(-3px);
-  color: var(--orange-yellow-crayola);
-}
-
-.navbar-link.active {
-  transition: all 0.3s ease;
-}
 
 
 
