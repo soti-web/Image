@@ -165,6 +165,15 @@ lightbox.addEventListener("click", function (e) {
   }
 });
 
+//dugmay send
+document.querySelector("[data-form-btn]").addEventListener("click", function (e) {
+  const form = document.querySelector("[data-form]");
+  if (!form.checkValidity()) {
+    e.preventDefault();
+    form.reportValidity();
+  }
+});
+
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
