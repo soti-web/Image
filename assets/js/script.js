@@ -139,6 +139,31 @@ for (let i = 0; i < formInputs.length; i++) {
 }
 
 
+// Lightbox zoom rsm
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const lightboxClose = document.getElementById("lightbox-close");
+
+const projectItems = document.querySelectorAll(".project-item a");
+
+for (let i = 0; i < projectItems.length; i++) {
+  projectItems[i].addEventListener("click", function (e) {
+    e.preventDefault();
+    const img = this.querySelector("img");
+    lightboxImg.src = img.src;
+    lightbox.style.display = "flex";
+  });
+}
+
+lightboxClose.addEventListener("click", function () {
+  lightbox.style.display = "none";
+});
+
+lightbox.addEventListener("click", function (e) {
+  if (e.target === lightbox) {
+    lightbox.style.display = "none";
+  }
+});
 
 
 // page navigation variables
@@ -153,7 +178,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
       if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
         pages[i].classList.add("active");
         navigationLinks[i].classList.add("active");
-        //window.scrollTo(0, 0);
+        window.scrollTo(0, 0);
       } else {
         pages[i].classList.remove("active");
         navigationLinks[i].classList.remove("active");
