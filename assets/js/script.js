@@ -138,6 +138,15 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+//rsm responsive
+// prevent project links from reloading page
+const projectLinks = document.querySelectorAll(".project-item a");
+
+for (let i = 0; i < projectLinks.length; i++) {
+  projectLinks[i].addEventListener("click", function (e) {
+    e.preventDefault();
+  });
+}
 
 
 
