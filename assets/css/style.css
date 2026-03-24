@@ -23,7 +23,8 @@
 
   /* gradient */
   
-  
+  #lightbox { display: none; }
+
   
 @font-face {
   font-family: "NRT-Bd";
