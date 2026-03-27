@@ -791,7 +791,7 @@ main {
 .project-list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 50px;
+  gap: 50px; /* نێوان کارتەکان بۆشایی
   margin-bottom: 10px;
 }
 
