@@ -31,8 +31,8 @@
   
   .order-btn {
   position: absolute;
-  bottom: 40px;
-  right: 2px;
+  bottom: 35px;
+  right: 1px;
   background: var(--bg-gradient-yellow-2);
   color: var(--orange-yellow-crayola);
   padding: 7px 14px;
