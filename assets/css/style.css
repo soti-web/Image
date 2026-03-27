@@ -58,7 +58,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px auto 5px auto;
+  margin-top: 50px;   /* بەرز/نزم */
+margin-left: auto;  /* راست */
+margin-right: 0;
   width: fit-content;
   background: var(--bg-gradient-yellow-2);
   color: var(--orange-yellow-crayola);
