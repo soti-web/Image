@@ -27,10 +27,14 @@
   
   #lightbox { display: none; }
   
-  .project-item h3,
-.project-item .project-category {
-  margin-top: 8px;
+.project-title {
+  margin-top: 15px;
 }
+
+.project-category {
+  margin-top: 5px;
+}
+
 
   
   .order-btn {
