@@ -39,7 +39,7 @@
   
   .order-btn {
   position: absolute;
-  bottom: 15px;
+  bottom: -15px;
   right: 0.5px;
   background: var(--bg-gradient-yellow-2);
   color: var(--orange-yellow-crayola);
