@@ -166,6 +166,19 @@ lightbox.addEventListener("click", function (e) {
 });
 
 
+//order
+const orderBtns = document.querySelectorAll("[data-order]");
+for (let i = 0; i < orderBtns.length; i++) {
+  orderBtns[i].addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector("[data-nav-link]").click();
+    // بە contact page بچە
+    const contactLink = [...document.querySelectorAll("[data-nav-link]")]
+      .find(el => el.innerHTML.toLowerCase() === "contact");
+    if (contactLink) contactLink.click();
+  });
+}
+
 
 
 // page navigation variables
