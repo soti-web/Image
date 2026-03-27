@@ -27,17 +27,8 @@
   
   #lightbox { display: none; }
   
-.project-title {
-  margin-top: 15px;
-}
 
-.project-category {
-  margin-top: 5px;
-}
-
-
-  
-  .order-btn {
+  /*.order-btn {
   position: absolute;
   bottom: -15px;
   right: 0.5px;
@@ -60,9 +51,9 @@
 .order-btn:hover {
   background: var(--bg-gradient-yellow-1);
   color: var(--smoky-black);
-}
+}*/
 
-/*.order-btn {
+.order-btn {
   position: relative;
   display: flex;
   align-items: center;
@@ -86,7 +77,7 @@
 .order-btn:hover {
   background: var(--bg-gradient-yellow-1);
   color: var(--smoky-black);
-}*/
+}
 
 
 
