@@ -59,7 +59,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -10px;   /* بەرزکەمکردن/نزم */
+  /*margin-top: -10px;    بەرزکەمکردن/نزم */
 margin-left: auto;  /* راست */
 margin-right: 0;
   width: fit-content;
