@@ -29,7 +29,7 @@
   
   
   
-  .order-btn {
+ /* .order-btn {
   position: absolute;
   bottom: 4px;
   right: 4px;
@@ -52,7 +52,34 @@
 .order-btn:hover {
   background: var(--bg-gradient-yellow-1);
   color: var(--smoky-black);
+} */
+
+.order-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto 5px auto;
+  width: fit-content;
+  background: var(--bg-gradient-yellow-2);
+  color: var(--orange-yellow-crayola);
+  padding: 7px 14px;
+  border-radius: 14px;
+  font-weight: var(--fw-600);
+  font-size: var(--fs-7);
+  gap: 6px;
+  z-index: 3;
+  text-decoration: none;
+  box-shadow: var(--shadow-2);
+  border: 1px solid var(--jet);
+  transition: var(--transition-1);
 }
+
+.order-btn:hover {
+  background: var(--bg-gradient-yellow-1);
+  color: var(--smoky-black);
+}
+
 
 
 
