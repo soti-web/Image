@@ -28,6 +28,32 @@
   #lightbox { display: none; }
   
   
+  
+  .order-btn {
+  position: absolute;
+  bottom: 58px;
+  right: 10px;
+  background: var(--bg-gradient-yellow-2);
+  color: var(--orange-yellow-crayola);
+  padding: 7px 14px;
+  border-radius: 14px;
+  font-weight: var(--fw-600);
+  font-size: var(--fs-7);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 3;
+  text-decoration: none;
+  box-shadow: var(--shadow-2);
+  border: 1px solid var(--jet);
+  transition: var(--transition-1);
+}
+
+.order-btn:hover {
+  background: var(--bg-gradient-yellow-1);
+  color: var(--smoky-black);
+}
+
 
 
 
