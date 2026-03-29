@@ -89,9 +89,10 @@
   #dark light mode
 \*-----------------------------------*/
 
-body.light-mode {
-  background: hsl(0, 0%, 95%);
+body.light-mode .navbar {
+  background: hsla(0, 0%, 50%, 0.75) !important;
 }
+
 
 
 
