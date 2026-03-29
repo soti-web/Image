@@ -86,29 +86,6 @@
 }
 
 /*-----------------------------------*\
-  #dark light button Effect
-\*-----------------------------------*/
-body {
-  transition: background 0.4s ease, color 0.4s ease;
-}
-
-body.light-mode * {
-  transition: background 0.4s ease, color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
-}
-
-.sidebar,
-article,
-.navbar,
-.service-item,
-.content-card,
-.form-input,
-.select-list,
-.filter-select {
-  transition: background 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
-}
-
-
-/*-----------------------------------*\
   #dark light mode
 \*-----------------------------------*/
 
