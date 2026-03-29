@@ -89,14 +89,11 @@
   #dark light mode
 \*-----------------------------------*/
 
-body.light-mode {
-  background: hsl(0, 0%, 93%) !important;
+body.light-mode,
+body.light-mode > * {
+  background-color: hsl(0, 0%, 93%) !important;
 }
 
-body.light-mode .navbar {
-  background: hsl(0, 0%, 20%) !important;
-  backdrop-filter: none !important;
-}
 
 /*-----------------------------------*\
   #icon discount with effect
