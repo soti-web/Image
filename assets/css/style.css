@@ -111,9 +111,12 @@ article,
 /*-----------------------------------*\
   #dark light mode
 \*-----------------------------------*/
-body.light-mode {
-  background: hsl(0, 0%, 95%);
+body.light-mode .navbar {
+  background: hsla(0, 0%, 80%, 0.95) !important;
+  border-color: hsl(0, 0%, 60%) !important;
+  box-shadow: 0 -4px 20px hsla(0, 0%, 0%, 0.15) !important;
 }
+
 
 body.light-mode .sidebar,
 body.light-mode article,
