@@ -94,6 +94,24 @@ body.light-mode > * {
   background-color: hsl(0, 0%, 93%) !important;
 }
 
+/*-----------------------------------*\
+  #dark light mode button effect
+\*-----------------------------------*/
+#theme-toggle {
+  transition: transform 0.3s ease;
+}
+
+#theme-toggle:active {
+  transform: rotate(30deg) scale(0.85);
+}
+
+#theme-toggle ion-icon {
+  transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+body.light-mode #theme-toggle ion-icon {
+  transform: rotate(180deg);
+}
 
 /*-----------------------------------*\
   #icon discount with effect
