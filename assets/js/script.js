@@ -37,24 +37,13 @@ const themeToggle = document.getElementById("theme-toggle");
 const themeIcon = themeToggle.querySelector("ion-icon");
 
 themeToggle.addEventListener("click", function () {
-  document.body.style.opacity = "0.85";
-  document.body.style.transform = "scale(0.99)";
-  
-  setTimeout(() => {
-    document.body.classList.toggle("light-mode");
-    if (document.body.classList.contains("light-mode")) {
-      themeIcon.setAttribute("name", "sunny-outline");
-    } else {
-      themeIcon.setAttribute("name", "moon-outline");
-    }
-    
-    document.body.style.opacity = "1";
-    document.body.style.transform = "scale(1)";
-  }, 200);
+  document.body.classList.toggle("light-mode");
+  if (document.body.classList.contains("light-mode")) {
+    themeIcon.setAttribute("name", "sunny-outline");
+  } else {
+    themeIcon.setAttribute("name", "moon-outline");
+  }
 });
-
-document.body.style.transition = "opacity 0.2s ease, transform 0.2s ease, background 0.4s ease";
-
 
 
 // add click event to all modal items
