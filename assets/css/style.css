@@ -90,8 +90,10 @@
 \*-----------------------------------*/
 
 body.light-mode .navbar {
-  background: hsla(0, 0%, 50%, 0.75) !important;
+  background: hsla(0, 0%, 40%, 0.90) !important;
+  backdrop-filter: none !important;
 }
+
 
 
 
