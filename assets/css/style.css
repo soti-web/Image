@@ -151,6 +151,23 @@ body.light-mode .info-content .title {
   color: hsl(0, 0%, 10%) !important;
 }
 
+body.light-mode .service-item,
+body.light-mode .content-card {
+  background: hsl(0, 0%, 92%);
+  border-color: hsl(0, 0%, 75%);
+}
+
+body.light-mode .service-item::before,
+body.light-mode .content-card::before {
+  background: hsl(0, 0%, 90%);
+}
+
+body.light-mode .service-item-title,
+body.light-mode .service-item-text {
+  color: hsl(0, 0%, 15%) !important;
+}
+
+
 
 /*-----------------------------------*\
   #icon discount with effect
