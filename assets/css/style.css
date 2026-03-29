@@ -86,6 +86,33 @@
 }
 
 
+.navbar-item {
+  position: relative;
+}
+
+.discount-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: linear-gradient(135deg, #ff4444, #cc0000);
+  color: white;
+  font-size: 9px;
+  font-weight: var(--fw-600);
+  padding: 3px 5px;
+  border-radius: 6px;
+  transform: rotate(-15deg);
+  box-shadow: 0 2px 8px rgba(255, 0, 0, 0.4);
+  animation: badgePulse 1.5s ease-in-out infinite;
+  z-index: 10;
+}
+
+@keyframes badgePulse {
+  0%, 100% { transform: rotate(-15deg) scale(1); }
+  50% { transform: rotate(-15deg) scale(1.15); }
+}
+
+
+
 .order-btn ion-icon {
   display: inline-block;
 }
