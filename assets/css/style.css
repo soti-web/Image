@@ -90,17 +90,71 @@
 \*-----------------------------------*/
 body.light-mode {
   background: hsl(0, 0%, 95%);
-  --eerie-black-1: hsl(0, 0%, 90%);
-  --eerie-black-2: hsl(0, 0%, 85%);
-  --jet: hsl(0, 0%, 70%);
-  --white-2: hsl(0, 0%, 10%);
-  --light-gray: hsl(0, 0%, 30%);
-  --light-gray-70: hsl(0, 0%, 40%);
-  --onyx: hsl(0, 0%, 80%);
-  --smoky-black: hsl(0, 0%, 95%);
+}
+
+body.light-mode .sidebar,
+body.light-mode article,
+body.light-mode .navbar,
+body.light-mode .service-item,
+body.light-mode .content-card,
+body.light-mode .testimonials-modal {
+  background: hsl(0, 0%, 88%);
+  border-color: hsl(0, 0%, 75%);
+}
+
+body.light-mode .project-title,
+body.light-mode .h2,
+body.light-mode .h3,
+body.light-mode .h4,
+body.light-mode .info-content .name {
+  color: hsl(0, 0%, 10%);
+}
+
+body.light-mode .project-category,
+body.light-mode .navbar-link,
+body.light-mode .contact-title {
+  color: hsl(0, 0%, 30%);
+}
+
+body.light-mode .navbar-link.active {
+  color: var(--orange-yellow-crayola);
+}
+
+body.light-mode .form-input {
+  color: hsl(0, 0%, 10%);
+  border-color: hsl(0, 0%, 70%);
+}
+
+body.light-mode .select-list,
+body.light-mode .filter-select {
+  background: hsl(0, 0%, 88%);
+  color: hsl(0, 0%, 20%);
+}
+
+body.light-mode .project-title,
+body.light-mode .h2,
+body.light-mode .h3,
+body.light-mode .h4,
+body.light-mode .info-content .name,
+body.light-mode .service-item-title,
+body.light-mode .testimonials-item-title,
+body.light-mode .modal-title,
+body.light-mode .form-title,
+body.light-mode .article-title,
+body.light-mode .contact-info .contact-link,
+body.light-mode .contact-info address,
+body.light-mode .service-item-text,
+body.light-mode .about-text,
+body.light-mode .testimonials-text,
+body.light-mode .modal-content p,
+body.light-mode .info-content .title {
+  color: hsl(0, 0%, 10%) !important;
 }
 
 
+/*-----------------------------------*\
+  #icon discount with effect
+\*-----------------------------------*/
 
 .navbar-item {
   position: relative;
