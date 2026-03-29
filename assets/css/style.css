@@ -85,6 +85,22 @@
 
 }
 
+/*-----------------------------------*\
+  #dark light mode
+\*-----------------------------------*/
+body.light-mode {
+  background: hsl(0, 0%, 95%);
+  --eerie-black-1: hsl(0, 0%, 90%);
+  --eerie-black-2: hsl(0, 0%, 85%);
+  --jet: hsl(0, 0%, 70%);
+  --white-2: hsl(0, 0%, 10%);
+  --light-gray: hsl(0, 0%, 30%);
+  --light-gray-70: hsl(0, 0%, 40%);
+  --onyx: hsl(0, 0%, 80%);
+  --smoky-black: hsl(0, 0%, 95%);
+}
+
+
 
 .navbar-item {
   position: relative;
@@ -111,8 +127,9 @@
   50% { transform: rotate(-15deg) scale(1.15); }
 }
 
-
-
+/*-----------------------------------*\
+  #button order yak hel bet
+\*-----------------------------------*/
 .order-btn ion-icon {
   display: inline-block;
 }
