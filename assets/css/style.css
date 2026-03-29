@@ -190,6 +190,44 @@ body.light-mode .service-item-text {
   color: hsl(0, 0%, 15%) !important;
 }
 
+body.light-mode .service-item,
+body.light-mode .content-card {
+  background: hsl(0, 0%, 88%) !important;
+}
+
+body.light-mode .service-item::before,
+body.light-mode .content-card::before {
+  background: hsl(0, 0%, 86%) !important;
+}
+
+body.light-mode .service-item-title,
+body.light-mode .service-item-text,
+body.light-mode .testimonials-item-title,
+body.light-mode .testimonials-text {
+  color: hsl(0, 0%, 15%) !important;
+}
+
+body.light-mode .social-item .social-link {
+  color: hsl(0, 0%, 20%) !important;
+}
+
+body.light-mode .social-item .social-link:hover {
+  color: hsl(0, 0%, 5%) !important;
+}
+
+body.light-mode .navbar-link {
+  color: hsl(0, 0%, 25%) !important;
+}
+
+body.light-mode .navbar-link:hover {
+  color: hsl(0, 0%, 10%) !important;
+}
+
+body.light-mode .navbar-link.active {
+  color: hsl(45, 100%, 45%) !important;
+}
+
+
 
 
 /*-----------------------------------*\
