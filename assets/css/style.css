@@ -113,6 +113,11 @@ body.light-mode #theme-toggle ion-icon {
   transform: rotate(180deg);
 }
 
+body {
+  transition: background-color 0.5s ease;
+}
+
+
 /*-----------------------------------*\
   #icon discount with effect
 \*-----------------------------------*/
