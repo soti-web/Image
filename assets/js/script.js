@@ -40,10 +40,13 @@ themeToggle.addEventListener("click", function () {
   document.body.classList.toggle("light-mode");
   if (document.body.classList.contains("light-mode")) {
     themeIcon.setAttribute("name", "sunny-outline");
+    document.documentElement.style.setProperty('--smoky-black', 'hsl(0, 0%, 93%)');
   } else {
     themeIcon.setAttribute("name", "moon-outline");
+    document.documentElement.style.setProperty('--smoky-black', 'hsl(0, 0%, 7%)');
   }
 });
+
 
 
 // add click event to all modal items
