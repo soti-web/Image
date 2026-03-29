@@ -32,6 +32,19 @@ const testimonialsModalFunc = function () {
   modalContainer.classList.toggle("active");
   overlay.classList.toggle("active");
 }
+//dark light mode
+const themeToggle = document.getElementById("theme-toggle");
+const themeIcon = themeToggle.querySelector("ion-icon");
+
+themeToggle.addEventListener("click", function () {
+  document.body.classList.toggle("light-mode");
+  if (document.body.classList.contains("light-mode")) {
+    themeIcon.setAttribute("name", "sunny-outline");
+  } else {
+    themeIcon.setAttribute("name", "moon-outline");
+  }
+});
+
 
 // add click event to all modal items
 for (let i = 0; i < testimonialsItem.length; i++) {
