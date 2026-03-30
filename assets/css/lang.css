@@ -73,9 +73,12 @@
 
 
 
-[dir="rtl"] .service-content-box {
-  text-align: center;
+@media (max-width: 580px) {
+  [dir="rtl"] .service-content-box {
+    text-align: center;
+  }
 }
+
 
 
 /* ===================================
