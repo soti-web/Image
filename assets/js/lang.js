@@ -107,13 +107,17 @@ function applyLanguage(lang) {
   // Direction
   document.documentElement.setAttribute("dir", isKu ? "rtl" : "ltr");
   document.documentElement.setAttribute("lang", isKu ? "ku" : "en");
-
+  
   // Navbar links
-  const navLinks = document.querySelectorAll("[data-nav-link]");
-  const navKeys = ["nav-about", "nav-project", "nav-contact"];
-  navLinks.forEach((link, i) => {
-    if (navKeys[i]) link.textContent = t[navKeys[i]];
-  });
+const navLinks = document.querySelectorAll("[data-nav-link]");
+const navKeys = ["nav-about", "nav-project", "nav-contact"];
+navLinks.forEach((link, i) => {
+  if (navKeys[i]) {
+    link.textContent = t[navKeys[i]];
+    link.setAttribute("data-page-en", ["about", "project", "contact"][i]);
+  }
+});
+
 
   // Sidebar title
   const sidebarTitle = document.querySelector(".info-content .title");
