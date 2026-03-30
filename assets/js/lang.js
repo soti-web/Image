@@ -206,6 +206,8 @@ navLinks.forEach((link, i) => {
 // Lang Toggle Button
 // ===================================
 
+const langToggle = document.getElementById("lang-toggle");
+
 if (langToggle) {
   langToggle.addEventListener("click", function () {
     this.style.opacity = "0";
@@ -220,12 +222,3 @@ if (langToggle) {
   });
 }
 
-
-const langToggle = document.getElementById("lang-toggle");
-
-if (langToggle) {
-  langToggle.addEventListener("click", function () {
-    currentLang = currentLang === "en" ? "ku" : "en";
-    applyLanguage(currentLang);
-  });
-}
