@@ -66,6 +66,11 @@
   font-family: "NRT-Bd", sans-serif !important;
 }
 
+[dir="rtl"] p {
+  font-family: "NRT-Reg", sans-serif !important;
+  color: red !important;
+}
+
 
 
 /* ===================================
