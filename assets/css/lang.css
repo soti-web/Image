@@ -30,28 +30,6 @@
 /* ===================================
    FONTT TEXT (Kurdish)
 =================================== */
-[dir="rtl"] body,
-[dir="rtl"] p,
-[dir="rtl"] h1,
-[dir="rtl"] h2,
-[dir="rtl"] h3,
-[dir="rtl"] h4,
-[dir="rtl"] h5,
-[dir="rtl"] button,
-[dir="rtl"] input,
-[dir="rtl"] textarea {
-  font-family: "NRT-Reg", sans-serif;
-}
-
-[dir="rtl"] .h2,
-[dir="rtl"] .h3,
-[dir="rtl"] .h4,
-[dir="rtl"] .service-item-title,
-[dir="rtl"] .project-title,
-[dir="rtl"] .article-title {
-  font-family: "NRT-Bd", sans-serif;
-}
-
 [dir="rtl"] * {
   font-family: "NRT-Reg", sans-serif !important;
 }
@@ -65,6 +43,7 @@
 [dir="rtl"] .info-content .name {
   font-family: "NRT-Bd", sans-serif !important;
 }
+
 
 
 
