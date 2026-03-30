@@ -87,9 +87,9 @@ function applyLanguage(lang) {
   const isKu = lang === "ku";
 
   // Fade out
-  const allText = document.querySelectorAll(
-    ".service-item-title, .service-item-text, .article-title, .contact-title, .navbar-link, .testimonials-title, .form-title"
-  );
+const allText = document.querySelectorAll(
+  ".service-item-title, .service-item-text, .article-title, .contact-title, [data-nav-link], .testimonials-title, .form-title, .info_more-btn span, .info-content .title"
+);
   allText.forEach(el => el.style.opacity = "0");
 
   setTimeout(() => {
