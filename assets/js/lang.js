@@ -90,9 +90,13 @@ function applyLanguage(lang) {
   const allText = document.querySelectorAll(
     ".service-item-title, .service-item-text, .article-title, .contact-title, .navbar-link, .testimonials-title, .form-title"
   );
-  allText.forEach(el => el.style.opacity = "0");
+  allText.forEach(el => {
+    el.style.transition = "opacity 0.3s ease";
+    el.style.opacity = "0";
+  });
 
   setTimeout(() => {
+
 
     // Direction
     document.documentElement.setAttribute("dir", isKu ? "rtl" : "ltr");
