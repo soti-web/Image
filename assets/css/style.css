@@ -166,6 +166,14 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "NRT-Reg";
+  src: url("../assets/fonts/NRT-Reg.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 .FNRTB { font-family: "NRT-Bd", sans-serif; }
 
 /*-----------------------------------*\
