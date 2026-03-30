@@ -86,11 +86,21 @@ function applyLanguage(lang) {
   const t = translations[lang];
   const isKu = lang === "ku";
 
-  // Fade out
-const allText = document.querySelectorAll(
-  ".service-item-title, .service-item-text, .article-title, .contact-title, [data-nav-link], .testimonials-title, .form-title, .info_more-btn span, .info-content .title"
-);
-  allText.forEach(el => el.style.opacity = "0");
+  // Fade out — هەموو ئەلێمەنتەکان
+  const allText = document.querySelectorAll(
+    ".service-item-title, .service-item-text, .article-title, .contact-title, .testimonials-title, .form-title, .info_more-btn span, .info-content .title"
+  );
+  allText.forEach(el => {
+    el.style.opacity = "0";
+    el.style.transform = "translateY(4px)";
+  });
+
+  // Navbar fade out جیاوازە
+  const navLinks = document.querySelectorAll("[data-nav-link]");
+  navLinks.forEach(link => {
+    link.style.opacity = "0";
+    link.style.transform = "translateY(-4px)";
+  });
 
   setTimeout(() => {
 
@@ -99,7 +109,6 @@ const allText = document.querySelectorAll(
     document.documentElement.setAttribute("lang", isKu ? "ku" : "en");
 
     // Navbar links
-    const navLinks = document.querySelectorAll("[data-nav-link]");
     const navKeys = ["nav-about", "nav-project", "nav-contact"];
     navLinks.forEach((link, i) => {
       if (navKeys[i]) {
@@ -190,8 +199,17 @@ const allText = document.querySelectorAll(
     const langToggle = document.getElementById("lang-toggle");
     if (langToggle) langToggle.textContent = isKu ? "EN" : "KU";
 
-    // Fade in
-    allText.forEach(el => el.style.opacity = "1");
+    // Fade in — هەموو ئەلێمەنتەکان
+    allText.forEach(el => {
+      el.style.opacity = "1";
+      el.style.transform = "translateY(0)";
+    });
+
+    // Navbar fade in
+    navLinks.forEach(link => {
+      link.style.opacity = "1";
+      link.style.transform = "translateY(0)";
+    });
 
   }, 300);
 }
