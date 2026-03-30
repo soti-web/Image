@@ -1,0 +1,138 @@
+/*-----------------------------------*\
+  #lang.css
+  Language Switcher Styles
+  copyright 2026 @dev.muhamad
+\*-----------------------------------*/
+
+/* ===================================
+   Lang Toggle Button
+=================================== */
+
+#lang-toggle {
+  color: var(--light-gray);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-600);
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--jet);
+  background: var(--bg-gradient-jet);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  letter-spacing: 0.5px;
+}
+
+#lang-toggle:hover {
+  color: var(--orange-yellow-crayola);
+  border-color: var(--orange-yellow-crayola);
+  background: var(--bg-gradient-yellow-2);
+}
+
+/* ===================================
+   RTL Support (Kurdish)
+=================================== */
+
+[dir="rtl"] body {
+  font-family: "NRT-Bd", sans-serif;
+}
+
+[dir="rtl"] .sidebar-info {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .info_more-btn {
+  left: -15px;
+  right: auto;
+}
+
+[dir="rtl"] .contacts-list {
+  direction: rtl;
+}
+
+[dir="rtl"] .contact-item {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .contact-info {
+  text-align: right;
+}
+
+[dir="rtl"] .social-list {
+  flex-direction: row-reverse;
+  padding-right: 7px;
+  padding-left: 0;
+}
+
+[dir="rtl"] .article-title::after {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .service-content-box {
+  text-align: right;
+}
+
+[dir="rtl"] .project-title,
+[dir="rtl"] .project-category {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+[dir="rtl"] .order-btn {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+[dir="rtl"] .filter-list {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .form-input {
+  text-align: right;
+  direction: rtl;
+}
+
+[dir="rtl"] .form-btn {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .navbar-list {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .testimonials-avatar-box {
+  left: auto;
+  right: 0;
+  transform: translate(-15px, -25px);
+}
+
+[dir="rtl"] .modal-close-btn {
+  right: auto;
+  left: 15px;
+}
+
+[dir="rtl"] .discount-badge {
+  right: auto;
+  left: -8px;
+  transform: rotate(15deg);
+}
+
+@keyframes badgePulseRTL {
+  0%, 100% { transform: rotate(15deg) scale(1); }
+  50% { transform: rotate(15deg) scale(1.15); }
+}
+
+[dir="rtl"] .discount-badge {
+  animation: badgePulseRTL 1.5s ease-in-out infinite;
+}
+
+/* Light mode support */
+body.light-mode #lang-toggle {
+  color: hsl(0, 0%, 20%);
+  border-color: hsl(0, 0%, 60%);
+  background: hsl(0, 0%, 88%);
+}
+
+body.light-mode #lang-toggle:hover {
+  color: hsl(45, 100%, 40%);
+  border-color: hsl(45, 100%, 40%);
+}
