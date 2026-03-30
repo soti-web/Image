@@ -40,10 +40,10 @@ const translations = {
 
   ku: {
     "nav-about": "پرۆفایل",
-    "nav-project": "فرۆشگا",
+    "nav-project": "فـرۆشـگـا",
     "nav-contact": "پەیوەندی",
     "sidebar-title": "پەرەپێدەر",
-    "sidebar-show-contacts": "پەیوەندیەکان",
+    "sidebar-show-contacts": "زیاتر",
     "contact-email": "ئیمەیڵ",
     "contact-telegram": "تێلێگرام",
     "contact-location": "شوێن",
@@ -57,7 +57,7 @@ const translations = {
     "service-mini-title": "پرۆژەی بچووک",
     "service-mini-text": "ئامادەم یارمەتیت بدەم بۆ ئەنجامدانی پڕۆژەکانت بە شێوەیەکی پیشەیی و سەرکەوتوو.",
     "team-title": "تیم",
-    "project-title": "فرۆشگا",
+    "project-title": "فـرۆشـگـا",
     "filter-all": "هەموو بابەتەکان",
     "filter-website": "وێبسایت",
     "filter-project": "پرۆژە",
