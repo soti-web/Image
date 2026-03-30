@@ -71,13 +71,21 @@
 }
 
 
-
+/* ===================================
+   RTL no support about (Kurdish)
+=================================== */
 
 @media (max-width: 580px) {
   [dir="rtl"] .service-content-box {
-    text-align: center;
+    text-align: center !important;
+  }
+  
+  [dir="rtl"] .service-item-title,
+  [dir="rtl"] .service-item-text {
+    text-align: center !important;
   }
 }
+
 
 
 
