@@ -969,7 +969,7 @@ main {
 
 /*-----------------------------------*\
   #ORDER BUTTON
-\*-----------------------------------*/
+\*-----------------------------------
 
 .order-btn {
   position: relative;
@@ -997,7 +997,41 @@ main {
 .order-btn:hover {
   background: var(--bg-gradient-yellow-1);
   color: var(--smoky-black);
+}*/
+
+.order-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: 0;
+  width: fit-content;
+  background: linear-gradient(135deg, #ff4444, #cc0000);
+  color: white;
+  padding: 7px 14px;
+  border-radius: 14px;
+  font-weight: var(--fw-600);
+  font-size: var(--fs-7);
+  gap: 5px;
+  z-index: 3;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(255, 0, 0, 0.4);
+  border: none;
+  transition: var(--transition-1);
 }
+
+.order-btn:hover {
+  background: linear-gradient(135deg, #cc0000, #990000);
+  color: white;
+}
+
+.order-btn ion-icon {
+  color: white;
+  display: inline-block;
+}
+
 
 /*-----------------------------------*\
   #BLOG
