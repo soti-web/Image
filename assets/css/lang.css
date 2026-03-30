@@ -27,6 +27,24 @@
   background: var(--bg-gradient-yellow-2);
 }
 
+
+/* ===================================
+   FADE TEXT (Kurdish)
+=================================== */
+.service-item-title,
+.service-item-text,
+.article-title,
+.contact-title,
+.navbar-link,
+.info-content .title,
+.testimonials-title,
+.form-title,
+.project-title,
+.project-category {
+  transition: opacity 0.3s ease;
+}
+
+
 /* ===================================
    EFECCT (Kurdish)
 =================================== */
