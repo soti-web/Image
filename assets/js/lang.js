@@ -6,19 +6,14 @@
 
 const translations = {
   en: {
-    // Navbar
     "nav-about": "About",
     "nav-project": "Project",
     "nav-contact": "Contact",
-
-    // Sidebar
     "sidebar-title": "developer",
     "sidebar-show-contacts": "Show Contacts",
     "contact-email": "Email",
     "contact-telegram": "Telegram",
     "contact-location": "Location",
-
-    // About Page
     "about-title": "About",
     "service-design-title": "Design",
     "service-design-text": "We create logos, banners, posters, and ads professionally and modernly based on your needs.",
@@ -29,16 +24,12 @@ const translations = {
     "service-mini-title": "Mini Project",
     "service-mini-text": "I am ready to help you complete your projects professionally and successfully.",
     "team-title": "TEAM",
-
-    // Project Page
     "project-title": "Project",
     "filter-all": "All",
     "filter-website": "Website",
     "filter-project": "Project",
     "filter-graphic": "Graphic Design",
     "select-category": "Select category",
-
-    // Contact Page
     "contact-title": "Contact",
     "form-title": "Contact Form",
     "form-name": "Full name",
@@ -48,19 +39,14 @@ const translations = {
   },
 
   ku: {
-    // Navbar
     "nav-about": "دەربارە",
     "nav-project": "پرۆژە",
     "nav-contact": "پەیوەندی",
-
-    // Sidebar
     "sidebar-title": "پێشەیی",
     "sidebar-show-contacts": "پەیوەندیەکان",
     "contact-email": "ئیمەیڵ",
     "contact-telegram": "تێلێگرام",
     "contact-location": "شوێن",
-
-    // About Page
     "about-title": "دەربارە",
     "service-design-title": "دیزاین",
     "service-design-text": "بەپێی خواستی خۆت لۆگۆ، بانەر، پۆستەر، ریکلام، بۆت دروست دەکەین بەشێوەیەکی پرۆفیشناڵانەو سەردەمیانە.",
@@ -71,16 +57,12 @@ const translations = {
     "service-mini-title": "پرۆژەی بچووک",
     "service-mini-text": "ئامادەم یارمەتیت بدەم بۆ ئەنجامدانی پڕۆژەکانت بە شێوەیەکی پیشەیی و سەرکەوتوو.",
     "team-title": "تیم",
-
-    // Project Page
     "project-title": "پرۆژەکان",
     "filter-all": "هەموو",
     "filter-website": "وێبسایت",
     "filter-project": "پرۆژە",
     "filter-graphic": "گرافیک دیزاین",
     "select-category": "جۆر هەڵبژێرە",
-
-    // Contact Page
     "contact-title": "پەیوەندی",
     "form-title": "فۆرمی پەیوەندی",
     "form-name": "ناوی تەواو",
@@ -104,102 +86,114 @@ function applyLanguage(lang) {
   const t = translations[lang];
   const isKu = lang === "ku";
 
-  // Direction
-  document.documentElement.setAttribute("dir", isKu ? "rtl" : "ltr");
-  document.documentElement.setAttribute("lang", isKu ? "ku" : "en");
-  
-  // Navbar links
-const navLinks = document.querySelectorAll("[data-nav-link]");
-const navKeys = ["nav-about", "nav-project", "nav-contact"];
-navLinks.forEach((link, i) => {
-  if (navKeys[i]) {
-    link.textContent = t[navKeys[i]];
-    link.setAttribute("data-page-en", ["about", "project", "contact"][i]);
-  }
-});
+  // Fade out
+  const allText = document.querySelectorAll(
+    ".service-item-title, .service-item-text, .article-title, .contact-title, .navbar-link, .testimonials-title, .form-title"
+  );
+  allText.forEach(el => el.style.opacity = "0");
 
+  setTimeout(() => {
 
-  // Sidebar title
-  const sidebarTitle = document.querySelector(".info-content .title");
-  if (sidebarTitle) sidebarTitle.textContent = t["sidebar-title"];
+    // Direction
+    document.documentElement.setAttribute("dir", isKu ? "rtl" : "ltr");
+    document.documentElement.setAttribute("lang", isKu ? "ku" : "en");
 
-  // Show Contacts button
-  const showContacts = document.querySelector(".info_more-btn span");
-  if (showContacts) showContacts.textContent = t["sidebar-show-contacts"];
+    // Navbar links
+    const navLinks = document.querySelectorAll("[data-nav-link]");
+    const navKeys = ["nav-about", "nav-project", "nav-contact"];
+    navLinks.forEach((link, i) => {
+      if (navKeys[i]) {
+        link.textContent = t[navKeys[i]];
+        link.setAttribute("data-page-en", ["about", "project", "contact"][i]);
+      }
+    });
 
-  // Contact titles
-  const contactTitles = document.querySelectorAll(".contact-title");
-  const contactKeys = ["contact-email", "contact-telegram", "contact-location"];
-  contactTitles.forEach((el, i) => {
-    if (contactKeys[i]) el.textContent = t[contactKeys[i]];
-  });
+    // Sidebar title
+    const sidebarTitle = document.querySelector(".info-content .title");
+    if (sidebarTitle) sidebarTitle.textContent = t["sidebar-title"];
 
-  // About title
-  const aboutTitle = document.querySelector(".about .article-title");
-  if (aboutTitle) aboutTitle.textContent = t["about-title"];
+    // Show Contacts button
+    const showContacts = document.querySelector(".info_more-btn span");
+    if (showContacts) showContacts.textContent = t["sidebar-show-contacts"];
 
-  // Service items
-  const serviceTitles = document.querySelectorAll(".service-item-title");
-  const serviceTexts = document.querySelectorAll(".service-item-text");
-  const serviceTitleKeys = ["service-design-title", "service-web-title", "service-raport-title", "service-mini-title"];
-  const serviceTextKeys = ["service-design-text", "service-web-text", "service-raport-text", "service-mini-text"];
+    // Contact titles
+    const contactTitles = document.querySelectorAll(".contact-title");
+    const contactKeys = ["contact-email", "contact-telegram", "contact-location"];
+    contactTitles.forEach((el, i) => {
+      if (contactKeys[i]) el.textContent = t[contactKeys[i]];
+    });
 
-  serviceTitles.forEach((el, i) => {
-    if (serviceTitleKeys[i]) el.textContent = t[serviceTitleKeys[i]];
-  });
-  serviceTexts.forEach((el, i) => {
-    if (serviceTextKeys[i]) el.textContent = t[serviceTextKeys[i]];
-  });
+    // About title
+    const aboutTitle = document.querySelector(".about .article-title");
+    if (aboutTitle) aboutTitle.textContent = t["about-title"];
 
-  // Team title
-  const teamTitle = document.querySelector(".testimonials-title");
-  if (teamTitle) teamTitle.textContent = t["team-title"];
+    // Service items
+    const serviceTitles = document.querySelectorAll(".service-item-title");
+    const serviceTexts = document.querySelectorAll(".service-item-text");
+    const serviceTitleKeys = ["service-design-title", "service-web-title", "service-raport-title", "service-mini-title"];
+    const serviceTextKeys = ["service-design-text", "service-web-text", "service-raport-text", "service-mini-text"];
 
-  // Project title
-  const projectTitle = document.querySelector(".project .article-title");
-  if (projectTitle) projectTitle.textContent = t["project-title"];
+    serviceTitles.forEach((el, i) => {
+      if (serviceTitleKeys[i]) el.textContent = t[serviceTitleKeys[i]];
+    });
+    serviceTexts.forEach((el, i) => {
+      if (serviceTextKeys[i]) el.textContent = t[serviceTextKeys[i]];
+    });
 
-  // Filter buttons
-  const filterBtns = document.querySelectorAll("[data-filter-btn]");
-  const filterKeys = ["filter-all", "filter-website", "filter-project", "filter-graphic"];
-  filterBtns.forEach((btn, i) => {
-    if (filterKeys[i]) btn.textContent = t[filterKeys[i]];
-  });
+    // Team title
+    const teamTitle = document.querySelector(".testimonials-title");
+    if (teamTitle) teamTitle.textContent = t["team-title"];
 
-  // Select category
-  const selectVal = document.querySelector("[data-selecct-value]");
-  if (selectVal) selectVal.textContent = t["select-category"];
+    // Project title
+    const projectTitle = document.querySelector(".project .article-title");
+    if (projectTitle) projectTitle.textContent = t["project-title"];
 
-  // Select items
-  const selectItems = document.querySelectorAll("[data-select-item] button");
-  const selectKeys = ["filter-all", "filter-website", "filter-project", "filter-graphic"];
-  selectItems.forEach((item, i) => {
-    if (selectKeys[i]) item.textContent = t[selectKeys[i]];
-  });
+    // Filter buttons
+    const filterBtns = document.querySelectorAll("[data-filter-btn]");
+    const filterKeys = ["filter-all", "filter-website", "filter-project", "filter-graphic"];
+    filterBtns.forEach((btn, i) => {
+      if (filterKeys[i]) btn.textContent = t[filterKeys[i]];
+    });
 
-  // Contact page title
-  const contactPageTitle = document.querySelector(".contact .article-title");
-  if (contactPageTitle) contactPageTitle.textContent = t["contact-title"];
+    // Select category
+    const selectVal = document.querySelector("[data-selecct-value]");
+    if (selectVal) selectVal.textContent = t["select-category"];
 
-  // Form title
-  const formTitle = document.querySelector(".form-title");
-  if (formTitle) formTitle.textContent = t["form-title"];
+    // Select items
+    const selectItems = document.querySelectorAll("[data-select-item] button");
+    const selectKeys = ["filter-all", "filter-website", "filter-project", "filter-graphic"];
+    selectItems.forEach((item, i) => {
+      if (selectKeys[i]) item.textContent = t[selectKeys[i]];
+    });
 
-  // Form placeholders
-  const formName = document.querySelector("input[name='fullname']");
-  const formEmail = document.querySelector("input[name='email']");
-  const formMsg = document.querySelector("textarea[name='message']");
-  if (formName) formName.placeholder = t["form-name"];
-  if (formEmail) formEmail.placeholder = t["form-email"];
-  if (formMsg) formMsg.placeholder = t["form-message"];
+    // Contact page title
+    const contactPageTitle = document.querySelector(".contact .article-title");
+    if (contactPageTitle) contactPageTitle.textContent = t["contact-title"];
 
-  // Form button
-  const formBtn = document.querySelector(".form-btn span");
-  if (formBtn) formBtn.textContent = t["form-btn"];
+    // Form title
+    const formTitle = document.querySelector(".form-title");
+    if (formTitle) formTitle.textContent = t["form-title"];
 
-  // Toggle button text
-  const langToggle = document.getElementById("lang-toggle");
-  if (langToggle) langToggle.textContent = isKu ? "EN" : "KU";
+    // Form placeholders
+    const formName = document.querySelector("input[name='fullname']");
+    const formEmail = document.querySelector("input[name='email']");
+    const formMsg = document.querySelector("textarea[name='message']");
+    if (formName) formName.placeholder = t["form-name"];
+    if (formEmail) formEmail.placeholder = t["form-email"];
+    if (formMsg) formMsg.placeholder = t["form-message"];
+
+    // Form button
+    const formBtn = document.querySelector(".form-btn span");
+    if (formBtn) formBtn.textContent = t["form-btn"];
+
+    // Toggle button text
+    const langToggle = document.getElementById("lang-toggle");
+    if (langToggle) langToggle.textContent = isKu ? "EN" : "KU";
+
+    // Fade in
+    allText.forEach(el => el.style.opacity = "1");
+
+  }, 300);
 }
 
 // ===================================
@@ -212,7 +206,7 @@ if (langToggle) {
   langToggle.addEventListener("click", function () {
     this.style.opacity = "0";
     this.style.transform = "scale(0.7)";
-    
+
     setTimeout(() => {
       currentLang = currentLang === "en" ? "ku" : "en";
       applyLanguage(currentLang);
@@ -221,4 +215,3 @@ if (langToggle) {
     }, 150);
   });
 }
-
