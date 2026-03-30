@@ -86,9 +86,9 @@
 ‏  const t = translations[lang];
 ‏  const isKu = lang === "ku";
 
-‏  // Fade out
-‏const allText = document.querySelectorAll(
-‏  ".service-item-title, .service-item-text, .article-title, .contact-title, [data-nav-link], .testimonials-title, .form-title, .info_more-btn span, .info-content .title"
+‏  // Fade out// کۆنەکە
+const allText = document.querySelectorAll(
+  ".service-item-title, .service-item-text, .article-title, .contact-title, .navbar-link, .testimonials-title, .form-title"
 );
 ‏  allText.forEach(el => el.style.opacity = "0");
 
