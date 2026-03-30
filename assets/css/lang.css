@@ -52,6 +52,21 @@
   font-family: "NRT-Bd", sans-serif;
 }
 
+[dir="rtl"] * {
+  font-family: "NRT-Reg", sans-serif !important;
+}
+
+[dir="rtl"] .h2,
+[dir="rtl"] .h3,
+[dir="rtl"] .h4,
+[dir="rtl"] .service-item-title,
+[dir="rtl"] .project-title,
+[dir="rtl"] .article-title,
+[dir="rtl"] .info-content .name {
+  font-family: "NRT-Bd", sans-serif !important;
+}
+
+
 
 /* ===================================
    FADE TEXT (Kurdish)
