@@ -206,6 +206,21 @@ navLinks.forEach((link, i) => {
 // Lang Toggle Button
 // ===================================
 
+if (langToggle) {
+  langToggle.addEventListener("click", function () {
+    this.style.opacity = "0";
+    this.style.transform = "scale(0.7)";
+    
+    setTimeout(() => {
+      currentLang = currentLang === "en" ? "ku" : "en";
+      applyLanguage(currentLang);
+      this.style.opacity = "1";
+      this.style.transform = "scale(1)";
+    }, 150);
+  });
+}
+
+
 const langToggle = document.getElementById("lang-toggle");
 
 if (langToggle) {
