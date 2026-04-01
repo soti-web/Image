@@ -1283,13 +1283,19 @@
           <h2 class="h2 article-title">Contact</h2>
         </header>
 
-        <section class="mapbox" data-mapbox>
+<!--        <section class="mapbox" data-mapbox>
           <figure>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104876.82119716892!2d43.94479353025327!3d36.19116232576888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4007225f3c1f9f13%3A0x3f7e9f9c8c7a2e32!2sErbil!5e0!3m2!1sen!2siq!4v1710000000000!5m2!1sen!2siq"
               width="400" height="300" loading="lazy"></iframe>
           </figure>
-        </section>
+        </section> -->
+        <section class="mapbox" data-mapbox>
+  <div id="globe-section" style="width:100%; height:300px; border-radius:16px; overflow:hidden; position:relative;">
+    <canvas id="kurdistan-globe" style="width:100%; height:100%;"></canvas>
+  </div>
+</section>
+
 
         <section class="contact-form">
 
@@ -1342,6 +1348,9 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="./assets/js/lang.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="./assets/js/globe.js"></script>
 
   
 
