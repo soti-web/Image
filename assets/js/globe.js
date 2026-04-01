@@ -37,7 +37,7 @@ const loader = new THREE.TextureLoader();
 // Earth
 const earthGeo = new THREE.SphereGeometry(1, 64, 64);
 const earthMat = new THREE.MeshPhongMaterial({
-  map: loader.load('https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg'),
+  map: loader.load('https://cdn.jsdelivr.net/npm/three-globe/example/img/earth-blue-marble.jpg'),
   specular: new THREE.Color(0x333333),
   shininess: 15,
 });
