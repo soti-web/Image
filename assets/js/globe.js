@@ -37,13 +37,13 @@ const loader = new THREE.TextureLoader();
 // Earth
 const earthGeo = new THREE.SphereGeometry(1, 64, 64);
 const earthMat = new THREE.MeshPhongMaterial({
-map: loader.load(‘https://raw.githubusercontent.com/mrdoob/three.js/r128/examples/textures/planets/earth_atmos_2048.jpg’),
-specularMap: loader.load(‘https://raw.githubusercontent.com/mrdoob/three.js/r128/examples/textures/planets/earth_specular_2048.jpg’),
-specular: new THREE.Color(0x333333),
-shininess: 15,
+  map: loader.load('https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg'),
+  specular: new THREE.Color(0x333333),
+  shininess: 15,
 });
 const earth = new THREE.Mesh(earthGeo, earthMat);
 scene.add(earth);
+
 
 // Atmosphere glow
 const atmosGeo = new THREE.SphereGeometry(1.02, 64, 64);
