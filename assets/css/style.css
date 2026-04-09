@@ -184,9 +184,16 @@ transform: rotate(30deg) scale(0.85);
 transition: transform 0.5s ease, opacity 0.3s ease;
 }
 
-body.light-mode #theme-toggle ion-icon {
-transform: rotate(180deg);
+body.light-mode {
+  --smoky-black: hsl(0, 0%, 93%);
+  --eerie-black-1: hsl(0, 0%, 88%);
+  --eerie-black-2: hsl(0, 0%, 85%);
+  --onyx: hsl(0, 0%, 80%);
+  --jet: hsl(0, 0%, 70%);
+  --white-2: hsl(0, 0%, 10%);
+  --light-gray: hsl(0, 0%, 20%);
 }
+
 
 body {
   background-image: 
