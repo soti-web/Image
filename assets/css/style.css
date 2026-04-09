@@ -75,12 +75,6 @@ transform: rotate(90deg) scale(1.2);
 color: var(–orange-yellow-crayola); /* ڕەنگی پۆرتفۆلیۆکەت بەکاربێنە */
 }
 
-body.light-mode {
-–bg-gradient-jet: linear-gradient(to bottom right, hsl(0, 0%, 98%), hsl(0, 0%, 90%));
-–container-bg: hsl(0, 0%, 95%);
-–text-color: hsl(0, 0%, 15%);
-/* لێرەدا هەموو ئەو ڕەنگانە دابنێ کە دەتەوێت لە مۆدی ڕووناکدا بگۆڕێن */
-}
 
 /* ئەنیمەیشنی گۆڕینی ئایکۆنی مانگ و خۆر */
 #theme-toggle ion-icon {
