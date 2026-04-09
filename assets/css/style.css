@@ -160,14 +160,7 @@ hsl(35, 100%, 68%)
 
 }
 
-/*———————————–*  
-#dark light mode
-*———————————–*/
 
-body.light-mode,
-body.light-mode > * {
-background-color: hsl(0, 0%, 93%) !important;
-}
 
 /*———————————–*  
 #dark light mode button effect
