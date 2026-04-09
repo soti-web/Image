@@ -13,9 +13,6 @@
 #CUSTOM PROPERTY
 *———————————–*/
 
-
-
-
 :root {
 
 –bg-gradient-onyx: linear-gradient(
@@ -89,7 +86,14 @@ hsl(35, 100%, 68%)
 
 }
 
+/*———————————–*  
+#dark light mode
+*———————————–*/
 
+body.light-mode,
+body.light-mode > * {
+background-color: hsl(0, 0%, 93%) !important;
+}
 
 /*———————————–*  
 #dark light mode button effect
@@ -125,23 +129,22 @@ position: relative;
 .discount-badge {
 position: absolute;
 top: -8px;
-left: 50%;
-right: auto;
-transform: translateX(-50%) rotate(-15deg);
+right: -8px;
 background: linear-gradient(135deg, #ff4444, #cc0000);
 color: white;
 font-size: 9px;
 font-weight: var(–fw-600);
 padding: 3px 5px;
 border-radius: 6px;
+transform: rotate(-15deg);
 box-shadow: 0 2px 8px rgba(255, 0, 0, 0.4);
 animation: badgePulse 1.5s ease-in-out infinite;
 z-index: 10;
 }
 
 @keyframes badgePulse {
-0%, 100% { transform: translateX(-50%) rotate(-15deg) scale(1); }
-50% { transform: translateX(-50%) rotate(-15deg) scale(1.15); }
+0%, 100% { transform: rotate(-15deg) scale(1); }
+50% { transform: rotate(-15deg) scale(1.15); }
 }
 
 /*———————————–*  
@@ -159,13 +162,6 @@ display: inline-block;
 font-family: “NRT-Bd”;
 src: url(”../assets/fonts/NRT-Bd.ttf”) format(“truetype”);
 font-weight: bold;
-font-style: normal;
-}
-
-@font-face {
-font-family: “NRT-Reg”;
-src: url(”../assets/fonts/NRT-Reg.ttf”) format(“truetype”);
-font-weight: normal;
 font-style: normal;
 }
 
