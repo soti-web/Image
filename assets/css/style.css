@@ -164,10 +164,6 @@ hsl(35, 100%, 68%)
 #dark light mode
 *———————————–*/
 
-body.light-mode,
-body.light-mode > * {
-background-color: hsl(0, 0%, 93%) !important;
-}
 
 /*———————————–*  
 #dark light mode button effect
@@ -957,10 +953,6 @@ margin-bottom: 10px;
 
 .project-item { display: none; }
 
-.project-item.active {
-display: block;
-animation: scaleUp 0.25s ease forwards;
-}
 
 @keyframes scaleUp {
 0% { transform: scale(0.5); }
