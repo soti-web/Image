@@ -23,6 +23,15 @@ const testimonialsModalFunc = function () {
 const themeToggle = document.getElementById("theme-toggle");
 const themeIcon = themeToggle.querySelector("ion-icon");
 
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "light") {
+  document.body.classList.add("light-mode");
+  themeIcon.setAttribute("name", "sunny-outline");
+} else {
+  document.body.classList.remove("light-mode");
+  themeIcon.setAttribute("name", "moon-outline");
+}
+
 themeToggle.addEventListener("click", function () {
   themeIcon.style.opacity = "0";
   themeIcon.style.transform = "rotate(90deg) scale(0.5)";
@@ -31,14 +40,17 @@ themeToggle.addEventListener("click", function () {
     if (document.body.classList.contains("light-mode")) {
       themeIcon.setAttribute("name", "sunny-outline");
       document.documentElement.style.setProperty('--smoky-black', 'hsl(0, 0%, 93%)');
+      localStorage.setItem("theme", "light");
     } else {
       themeIcon.setAttribute("name", "moon-outline");
       document.documentElement.style.setProperty('--smoky-black', 'hsl(0, 0%, 7%)');
+      localStorage.setItem("theme", "dark");
     }
     themeIcon.style.opacity = "1";
     themeIcon.style.transform = "rotate(0deg) scale(1)";
   }, 200);
 });
+
 
 for (let i = 0; i < testimonialsItem.length; i++) {
   testimonialsItem[i].addEventListener("click", function () {
