@@ -99,6 +99,10 @@ for (let i = 0; i < selectItems.length; i++) {
   });
 }
 
+
+
+
+
 // filter variables
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
@@ -228,4 +232,73 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+// --- ئەم بەشە لە کۆتایی Script.js زیاد بکە یان شوێنی کۆدە کۆنەکان بگرەوە ---
+
+// 1. باشترکردنی گۆڕینی لاپەڕەکان (Smooth Page Navigation)
+for (let i = 0; i < navigationLinks.length; i++) {
+  navigationLinks[i].addEventListener("click", function () {
+    const pageName = this.getAttribute("data-page-en") || this.textContent.trim().toLowerCase();
+
+    for (let i = 0; i < pages.length; i++) {
+      if (pageName === pages[i].dataset.page) {
+        // ئەنیمەیشنی ونبوون و دەرکەوتن
+        pages[i].style.opacity = "0";
+        pages[i].classList.add("active");
+        
+        requestAnimationFrame(() => {
+          pages[i].style.transition = "opacity 0.5s ease";
+          pages[i].style.opacity = "1";
+        });
+
+        navigationLinks[i].classList.add("active");
+        window.scrollTo({ top: 0, behavior: 'smooth' }); // سکڕۆڵکردن بۆ سەرەوە بە نەرمی
+      } else {
+        pages[i].classList.remove("active");
+        pages[i].style.opacity = "0";
+        navigationLinks[i].classList.remove("active");
+      }
+    }
+  });
+}
+
+// 2. باشترکردنی Lightbox (خاڵی سێیەم کە داوات کردبوو)
+// ئەم کۆدە وێنەکە بە نەرمی گەورە دەکات و کاتێک دایدەخەیت بە نەرمی ون دەبێت
+if (lightbox) {
+  lightbox.style.transition = "opacity 0.4s ease, visibility 0.4s";
+  lightbox.style.display = "flex";
+  lightbox.style.visibility = "hidden";
+  lightbox.style.opacity = "0";
+
+  for (let i = 0; i < projectItems.length; i++) {
+    projectItems[i].addEventListener("click", function (e) {
+      e.preventDefault();
+      const img = this.querySelector("img");
+      lightboxImg.src = img.src;
+      
+      // نیشاندانی Lightbox بە ئەنیمەیشن
+      lightbox.style.visibility = "visible";
+      lightbox.style.opacity = "1";
+      lightboxImg.style.transform = "scale(0.8)";
+      
+      setTimeout(() => {
+        lightboxImg.style.transition = "transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)";
+        lightboxImg.style.transform = "scale(1)";
+      }, 50);
+    });
+  }
+
+  const closeLightbox = () => {
+    lightbox.style.opacity = "0";
+    lightboxImg.style.transform = "scale(0.8)";
+    setTimeout(() => {
+      lightbox.style.visibility = "hidden";
+    }, 400);
+  };
+
+  lightboxClose.addEventListener("click", closeLightbox);
+  lightbox.addEventListener("click", (e) => { if (e.target === lightbox) closeLightbox(); });
+}
+
 
