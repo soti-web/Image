@@ -89,15 +89,16 @@ hsl(35, 100%, 68%)
 /*———————————–*  
 #dark light mode
 *———————————–*/
-
+/*
 body.light-mode,
 body.light-mode > * {
 background-color: hsl(0, 0%, 93%) !important;
-}
+}*/
 
 /*———————————–*  
 #dark light mode button effect
 *———————————–*/
+/*
 #theme-toggle {
 transition: transform 0.3s ease;
 }
@@ -117,7 +118,7 @@ transform: rotate(180deg);
 body {
 transition: background-color 0.5s ease;
 }
-
+*/
 /*———————————–*  
 #icon discount with effect
 *———————————–*/
