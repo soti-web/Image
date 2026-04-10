@@ -281,7 +281,7 @@ body {
   #REUSED STYLE
 \*-----------------------------------*/
 
-.sidebar,article {
+.sidebar, article {
   background: var(--eerie-black-2);
   border: 1px solid var(--jet);
   border-radius: 20px;
