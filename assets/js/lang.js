@@ -192,7 +192,9 @@ function applyLanguage(lang) {
 
     // Toggle button text
     const langToggle = document.getElementById("lang-toggle");
-    if (langToggle) langToggle.textContent = isKu ? "EN" : "KU";
+if (langToggle) langToggle.innerHTML = isKu 
+  ? '<img src="./assets/images/en.webp" alt="EN" style="width:24px;height:24px;border-radius:50%;object-fit:cover;">' 
+  : '<img src="./assets/images/kr.webp" alt="KU" style="width:24px;height:24px;border-radius:50%;object-fit:cover;">';
 
     // Fade in
     allText.forEach(el => el.style.opacity = "1");
