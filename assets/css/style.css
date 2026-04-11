@@ -282,9 +282,14 @@ input, textarea {
 html { font-family: var(--ff-poppins); }
 
 body {
-  background: hsl(220, 40%, 10%);
+  background: hsl(220, 35%, 8%);
+  background-image:
+    radial-gradient(ellipse at 0% 0%, hsl(220, 50%, 18%) 0%, transparent 50%),
+    radial-gradient(ellipse at 100% 100%, hsl(220, 50%, 15%) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, hsl(0, 0%, 5%) 0%, transparent 70%);
   transition: background-color 0.5s ease;
 }
+
 
 
 /*-----------------------------------*\
@@ -300,7 +305,7 @@ body {
 \*-----------------------------------*/
 
 .sidebar, article {
-  background: var(--eerie-black-2);
+  background: hsl(220, 45%, 18%);
   border: 1px solid var(--jet);
   border-radius: 20px;
   padding: 15px;
@@ -625,7 +630,7 @@ main {
 
 .service-item {
   position: relative;
-  background: var(--border-gradient-onyx);
+  background: hsl(220, 45%, 20%);
   padding: 20px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
