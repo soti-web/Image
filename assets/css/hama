@@ -303,13 +303,14 @@ body { background: var(–smoky-black); }
 #REUSED STYLE
 *———————————–*/
 
-.sidebar, article {
-background: var(–eerie-black-2);
-border: 1px solid var(–jet);
-border-radius: 20px;
-padding: 15px;
-box-shadow: var(–shadow-1);
-z-index: 1;
+.sidebar,
+article {
+  background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: var(--shadow-1);
+  z-index: 1;
 }
 
 .separator {
