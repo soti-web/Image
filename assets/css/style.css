@@ -631,7 +631,7 @@ main {
 
 .service-item {
   position: relative;
-  background: hsl(220, 45%, 20%);
+  background: hsla(210, 80%, 50%, 0.1);
   padding: 20px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
