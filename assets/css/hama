@@ -1408,7 +1408,10 @@ margin-bottom: 30px;
 –shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
 }
 
-.sidebar, article { width: 950px; box-shadow: var(–shadow-5); }
+  .sidebar, article {
+    width: 950px;
+    box-shadow: var(--shadow-5);
+  }
 
 main { margin-bottom: 60px; }
 
