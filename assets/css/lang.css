@@ -12,14 +12,8 @@
   color: var(--light-gray);
   font-size: var(--fs-8);
   font-weight: var(--fw-600);
-  padding: 6px 10px;
-  border-radius: 8px;
-  border: 1px solid var(--jet);
-  background: var(--bg-gradient-jet);
-  cursor: pointer;
-  transition: all 0.25s ease;
-  letter-spacing: 0.5px;
-}
+  padding: 4px;
+
 
 #lang-toggle:hover {
   color: var(--orange-yellow-crayola);
