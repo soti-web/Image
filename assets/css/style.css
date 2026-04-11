@@ -1722,10 +1722,13 @@ textarea.form-input::-webkit-resizer { display: none; }
    * SIDEBAR
    */
 
-  .contacts-list {
-    grid-template-columns: 1fr 1fr;
-    gap: 30px 15px;
-  }
+.contacts-list {
+display: grid;
+grid-template-columns: 1fr;
+gap: 16px;
+}
+
+
 
 
 
