@@ -192,9 +192,23 @@ function applyLanguage(lang) {
 
     // Toggle button text
     const langToggle = document.getElementById("lang-toggle");
-if (langToggle) langToggle.innerHTML = isKu 
-  ? '<img src="./assets/images/en.webp" alt="EN" style="width:24px;height:24px;border-radius:50%;object-fit:cover;">' 
-  : '<img src="./assets/images/kr.webp" alt="KU" style="width:24px;height:24px;border-radius:50%;object-fit:cover;">';
+if (langToggle) {
+  const thumb = langToggle.querySelector(".lang-switch-thumb img");
+  const leftLabel = langToggle.querySelector(".lang-label.left");
+  const rightLabel = langToggle.querySelector(".lang-label.right");
+  
+  if (isKu) {
+    langToggle.classList.remove("is-en");
+    if (thumb) thumb.src = "./assets/images/kr.webp";
+    if (leftLabel) { leftLabel.textContent = "KU"; leftLabel.classList.add("active"); }
+    if (rightLabel) { rightLabel.textContent = "EN"; rightLabel.classList.remove("active"); }
+  } else {
+    langToggle.classList.add("is-en");
+    if (thumb) thumb.src = "./assets/images/en.webp";
+    if (leftLabel) { leftLabel.textContent = "KU"; leftLabel.classList.remove("active"); }
+    if (rightLabel) { rightLabel.textContent = "EN"; rightLabel.classList.add("active"); }
+  }
+}
 
     // Fade in
     allText.forEach(el => el.style.opacity = "1");
