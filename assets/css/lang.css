@@ -236,6 +236,9 @@ body.light-mode #lang-toggle:hover {
   color: var(--orange-yellow-crayola);
 }
 
+
+
+
 .lang-switch-track {
   width: 52px;
   height: 28px;
@@ -243,7 +246,7 @@ body.light-mode #lang-toggle:hover {
   border-radius: 20px;
   border: 1px solid var(--jet);
   position: relative;
-  transition: background 0.3s ease;
+  transition: background 0.4s ease;
 }
 
 .lang-switch-thumb {
@@ -254,8 +257,13 @@ body.light-mode #lang-toggle:hover {
   height: 22px;
   border-radius: 50%;
   overflow: hidden;
-  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.lang-switch-thumb:active {
+  transform: scale(0.85) !important;
 }
 
 .lang-switch-thumb img {
@@ -263,12 +271,20 @@ body.light-mode #lang-toggle:hover {
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.4s ease;
 }
 
 #lang-toggle.is-en .lang-switch-thumb {
   transform: translateX(24px);
+  box-shadow: 0 2px 12px rgba(50, 120, 255, 0.4);
+}
+
+#lang-toggle:hover .lang-switch-thumb {
+  box-shadow: 0 4px 16px rgba(255, 200, 50, 0.4);
 }
 
 #lang-toggle.is-en .lang-switch-track {
-  background: var(--bg-gradient-jet);
+  background: hsla(220, 45%, 28%, 0.8);
+  border-color: hsla(210, 80%, 60%, 0.3);
 }
+
