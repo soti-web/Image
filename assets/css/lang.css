@@ -172,10 +172,6 @@
   flex-direction: row-reverse;
 }
 
-[dir="rtl"] .navbar-list {
-  flex-direction: row-reverse;
-}
-
 [dir="rtl"] .testimonials-avatar-box {
   left: auto;
   right: 0;
