@@ -183,11 +183,6 @@
   left: 15px;
 }
 
-[dir="rtl"] .discount-badge {
-  right: auto;
-  left: -8px;
-  transform: rotate(15deg);
-}
 
 @keyframes badgePulseRTL {
   0%, 100% { transform: rotate(15deg) scale(1); }
