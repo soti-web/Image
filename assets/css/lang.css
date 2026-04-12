@@ -90,6 +90,15 @@
    RTL no support about (Kurdish)
 =================================== */
 
+[dir="rtl"] .navbar {
+  direction: ltr;
+}
+
+[dir="rtl"] .navbar-list {
+  flex-direction: row;
+}
+
+
 @media (max-width: 580px) {
   [dir="rtl"] .service-content-box {
     text-align: center !important;
